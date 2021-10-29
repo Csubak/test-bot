@@ -65,16 +65,16 @@ bot.on("message", async message => {
     }
 
     if(cmd === `${prefix}clear`){
-        if(!message.member.hasPermission("KICK_MEMBERS")) return message.reply("Ehez a parancshoz nincs jogod!")
+        if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Ehez a parancshoz nincs jogod!")
         if(!message.guild.member(bot.user).hasPermission("ADMINISTRATOR")) return message.reply("A botnak adminnak kell lennie a szerveren, hogy működjön a parancs!")
     
-            if(args[1] && isNaN(args[1] && args[1] <= 100 || 1 < args[1] && args [1] < 101)){
+            if(args[0] && isNaN(args[0] && args[0] <= 100 || 0 < args[0] && args [0] < 101)){
                   
             } else {
                
                 
-                message.channel.send(`${Math.round(args)[1]}`)
-                message.channel.bulkDelete(Math.round(args[1]))
+                message.channel.send(`${Math.round(args)[0]}`)
+                message.channel.bulkDelete(Math.round(args[0]))
     
             } 
         
