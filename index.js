@@ -65,7 +65,7 @@ bot.on("message", async message => {
     }
 
     if(cmd === `${prefix}clear`){
-        if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply("Ehez a parancshoz nincs jogod!")
+        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Ehez a parancshoz nincs jogod!")
         if(!message.guild.member(bot.user).hasPermission("ADMINISTRATOR")) return message.reply("A botnak adminnak kell lennie a szerveren, hogy működjön a parancs!")
     
             if(args[0] && isNaN(args[0] && args[0] <= 100 || 0 < args[0] && args [0] < 101)){
