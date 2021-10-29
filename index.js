@@ -10,7 +10,7 @@ bot.on("ready", async() => {
     console.log(`${bot.user.username} elindult!`)
 
     let státuszok = [
-        "Prefix: !", 
+        "Prefix: ;", 
         "#Átlagos 1",
         "Készitő: Zoli",
         
