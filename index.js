@@ -70,7 +70,7 @@ bot.on("message", async message => {
     
             if(args[0] && isNaN(args[0] && args[0] <= 100 || 0 < args[0] && args [0] < 101)){
                   
-            } //else {
+            } else {
                
                 
                 //message.channel.send(`${Math.round(args)[0]}`)
