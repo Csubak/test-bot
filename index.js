@@ -10,7 +10,10 @@ bot.on("ready", async() => {
     console.log(`${bot.user.username} elindult!`)
 
     let státuszok = [
-        "Fejlesztés alatt..."
+        "Prefix: !", 
+        "#Átlagos 1",
+        "Készitő: Zoli",
+        
     ]
 
     setInterval(function() {
@@ -60,6 +63,24 @@ bot.on("message", async message => {
             message.reply("írj szöveget!")
         }
     }
+
+    if(cmd === `${prefix}clear`){
+        if(!message.member.hasPermission("KICK_MEMBERS")) return message.reply("Ehez a parancshoz nincs jogod!")
+        if(!message.guild.member(bot.user).hasPermission("ADMINISTRATOR")) return message.reply("A botnak adminnak kell lennie a szerveren, hogy működjön a parancs!")
+    
+            if(args[0] && isNaN(args[0] && args[0] <= 100 || 0 < args[0] && args [0] < 101)){
+                  
+            } else {
+                message.reply(`Használat: ${prefix}clear <1-100>`)
+                
+                message.channel.send(`${Math.round(args)[0]}`)
+                message.channel.bulkDelete(Math.round(args[0]))
+    
+            } 
+        
+       
+    }
+
 
     /////////////////////////////////
     //// LOGIKAI OPERÁTOROK TIPP ////
