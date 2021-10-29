@@ -202,7 +202,7 @@ bot.on("message", async message => {
             })
 
         } else {
-            message.reply("Kérlek adj meg egy település nevet!")
+            message.reply("Kérlek add meg a település nevét")
         }
     }
 
