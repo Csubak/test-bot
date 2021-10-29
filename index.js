@@ -71,7 +71,7 @@ bot.on("message", async message => {
             if(args[0] && isNaN(args[0] && args[0] <= 100 || 0 < args[0] && args [0] < 101)){
                   
             } else {
-                message.reply(`Használat: ${prefix}clear <1-100>`)
+               
                 
                 message.channel.send(`${Math.round(args)[0]}`)
                 message.channel.bulkDelete(Math.round(args[0]))
