@@ -73,8 +73,8 @@ bot.on("message", async message => {
             } else {
                
                 
-                //message.channel.send(`${Math.round(args)[0]}`)
-                //message.channel.bulkDelete(Math.round(args[0]))
+                message.channel.send(`${Math.round(args)[0]}`)
+                message.channel.bulkDelete(Math.round(args[0]))
     
             } 
         
